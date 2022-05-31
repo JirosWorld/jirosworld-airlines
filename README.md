@@ -10,11 +10,17 @@ De opdracht dient in een van de gangbare front-end frameworks gemaakt te worden:
 
 Er zijn geen eisen wat betreft de look & feel.
 
-De opdracht is in te zien op 2 manieren:
+De opdracht is in te zien op 3 manieren:
 
-1. Een link naar de demo: https://thriving-froyo-4db3de.netlify.app/ (Tip!: via Netlify kun je gratis gebruik maken van Hosting en CI/CD. Maak een account aan en koppel een git repo. Dan wordt elke keer een build gedraaid als je pusht naar de repo)
-2. Een link naar de repo: https://github.com/JirosWorld/sharevalue-airlines (zodat we je code kunnen beoordelen, en zelf de applicatie kunnen draaien om te kijken hoe het werkt).
-3. Bij het inleveren van de opdracht vermeld dan ook minimaal één zoekvoorbeeld waarmee gezocht kan worden in de applicatie: ```Zoek bijvoorbeeld op New York```
+1. Link naar de demo: https://creative-paprenjak-7d6fb6.netlify.app/ (via Netlify.)
+2. Link naar de repo: https://github.com/JirosWorld/sharevalue-airlines (zodat we je code kunnen beoordelen, en zelf de applicatie kunnen draaien om te kijken hoe het werkt).
+3. Maak gebruik van minimaal één zoekvoorbeeld waarmee gezocht kan worden in de applicatie: ```Zoek bijvoorbeeld op 'Amsterdam' en 'New York'```
 
 Handleiding van de interface:
 
+
+Techniek:
+
+- React hooks
+- useState
+- useEffect

@@ -1,17 +1,18 @@
 import React from 'react';
 
-function InputField({ errors, register, labelText, labelId, inputType = "text", inputName, validationRules }) {
-
-  return (
-    <>
-      <label htmlFor={labelId}>
-        {labelText}
-      </label>
-      <input type={inputType} id={labelId}
-             className={errors[inputName] && "error"}  {...register(inputName, validationRules)} />
-      {errors[inputName] && <p className="error-message">{errors[inputName].message}</p>}
-    </>
-  );
+function InputField({ name, inputType, label, value, changeHandler}) {
+    return (
+        <>
+            <label htmlFor={`${name}-field`}>{label}</label>
+            <input
+                name={`${name}-field`}
+                id={`${name}-field`}
+                type={inputType}
+                value={value}
+                onChange={(e) => changeHandler(e.target.value)}
+            />
+        </>
+    );
 }
 
 export default InputField;

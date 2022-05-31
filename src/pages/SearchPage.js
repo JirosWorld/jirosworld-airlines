@@ -13,39 +13,49 @@ export default function SearchPage() {
     return (
 
         <div className="inner">
-            <input placeholder="Zoek plaats van vertrek" onChange={event => setQueryDeparture(event.target.value)}/>
 
-            {
-                Data.filter(post => {
-                    if (queryDeparture === '') {
-                        return post;
-                    } else if (post.city.toLowerCase().includes(queryDeparture.toLowerCase())) {
-                        return post;
-                    }
-                }).map((post, index) => (
-                    <div className="box" key={index}>
-                        <p>{post.city}</p>
-                        <p>{post.country}</p>
-                    </div>
-                ))
-            }
+            <div className="column">
+                <label htmlFor="departure">Van:</label>
+                <input placeholder="Zoek plaats van vertrek"
+                       onChange={event => setQueryDeparture(event.target.value)}/>
 
-            <input placeholder="Kies plaats van aankomst" onChange={event => setQueryArrival(event.target.value)}/>
+                {
+                    Data.filter(post => {
+                        if (queryDeparture === '') {
+                            return post;
+                        } else if (post.city.toLowerCase().includes(queryDeparture.toLowerCase())) {
+                            return post;
+                        }
+                    }).map((post, index) => (
+                        <div className="box" key={index}>
+                            <p>{post.city}</p>
+                            <p>{post.country}</p>
+                        </div>
+                    ))
+                }
+            </div>
 
-            {
-                Data.filter(post => {
-                    if (queryArrival === '') {
-                        return post;
-                    } else if (post.city.toLowerCase().includes(queryArrival.toLowerCase())) {
-                        return post;
-                    }
-                }).map((post, index) => (
-                    <div className="box" key={index}>
-                        <p>{post.city}</p>
-                        <p>{post.country}</p>
-                    </div>
-                ))
-            }
+            <div className="column">
+                <label htmlFor="arrival">Naar:</label>
+                <input placeholder="Kies plaats van aankomst"
+                       onChange={event => setQueryArrival(event.target.value)}/>
+
+                {
+                    Data.filter(post => {
+                        if (queryArrival === '') {
+                            return post;
+                        } else if (post.city.toLowerCase().includes(queryArrival.toLowerCase())) {
+                            return post;
+                        }
+                    }).map((post, index) => (
+                        <div className="box" key={index}>
+                            <p>{post.city}</p>
+                            <p>{post.country}</p>
+                        </div>
+                    ))
+                }
+            </div>
+
 
         </div>
     )

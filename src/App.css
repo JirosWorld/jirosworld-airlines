@@ -9,7 +9,14 @@ img {
 }
 
 .inner {
-  width: 720px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.column {
+  width: 95%;
 }
 
 button {
@@ -22,4 +29,10 @@ button {
   margin: 20px 0;
   padding: 16px 10px;
   border-radius: 4px;
+}
+
+hr {
+  margin: 3em 0;
+  border: 1px solid #ec5990;
+  width: 100%;
 }

@@ -18,6 +18,7 @@ function App() {
       <main className="page-container">
         <h1>Zoek vertrek en aankomst</h1>
         <img src={logo} alt="Sharevalue Logo"/>
+        <hr/>
 
         <SearchPage />
       </main>
