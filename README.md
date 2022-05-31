@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Sharevalue assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bouw een applicatie om een vlucht te boeken: een gebruiker kan een vertrek en een aankomstlocatie invoeren, de gewenste vertrekdatum en het aantal personen. Na het klikken op de zoekknop krijg je een overzicht met gevonden vluchten. Als de gebruiker een vlucht selecteert kan de gebruiker zijn gegevens invoeren en krijgt de gebruiker een overzicht van de gegevens.
 
-## Available Scripts
+De focus ligt op de flight search, de data mag gemockt worden (JSON), of uit een API komen. Uiteraard hoef het niet volledig te werken. (Bijvoorbeeld maar een beperkt aantal bestemmingen.)
 
-In the project directory, you can run:
+De opdracht dient in een van de gangbare front-end frameworks gemaakt te worden: React, Angular of Vue.
 
-### `npm start`
+```Noot van Jiro: ik heb React gebruikt```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Er zijn geen eisen wat betreft de look & feel.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+De opdracht is in te zien op 2 manieren:
 
-### `npm test`
+1. Een link naar de demo: https://thriving-froyo-4db3de.netlify.app/ (Tip!: via Netlify kun je gratis gebruik maken van Hosting en CI/CD. Maak een account aan en koppel een git repo. Dan wordt elke keer een build gedraaid als je pusht naar de repo)
+2. Een link naar de repo: https://github.com/JirosWorld/sharevalue-airlines (zodat we je code kunnen beoordelen, en zelf de applicatie kunnen draaien om te kijken hoe het werkt).
+3. Bij het inleveren van de opdracht vermeld dan ook minimaal één zoekvoorbeeld waarmee gezocht kan worden in de applicatie: ```Zoek bijvoorbeeld op New York```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Handleiding van de interface:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

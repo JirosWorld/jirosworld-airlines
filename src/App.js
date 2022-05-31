@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import logo from './assets/logo.jpeg';
 import './App.css';
+import {useEffect} from "react";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Jiro's Sharevalue Airlines"
+
+    setTimeout(() => {
+      window.scrollTo({top: 0, behavior: 'smooth'})
+    }, 0);
+    console.log("De pagina begint met de window naar boven gescrolld");
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <main className="page-container">
+        <h1>Zoek vertrek en aankomst</h1>
+        <img src={logo} alt="Sharevalue Logo"/>
+
+        <SearchPage />
+      </main>
   );
 }
 
