@@ -1,14 +1,12 @@
 # Sharevalue assessment
 
-Bouw een applicatie om een vlucht te boeken: een gebruiker kan een vertrek en een aankomstlocatie invoeren, de gewenste vertrekdatum en het aantal personen. Na het klikken op de zoekknop krijg je een overzicht met gevonden vluchten. Als de gebruiker een vlucht selecteert kan de gebruiker zijn gegevens invoeren en krijgt de gebruiker een overzicht van de gegevens.
+Gebouwd: een applicatie om een vlucht te boeken: een gebruiker kan een vertrek en een aankomstlocatie invoeren, de gewenste vertrekdatum en het aantal personen. Na het klikken op de zoekknop krijg je een overzicht met gevonden vluchten. Als de gebruiker een vlucht selecteert kan de gebruiker zijn gegevens invoeren en krijgt de gebruiker een overzicht van de gegevens.
 
-De focus ligt op de flight search, de data mag gemockt worden (JSON), of uit een API komen. Uiteraard hoef het niet volledig te werken. (Bijvoorbeeld maar een beperkt aantal bestemmingen.)
+De focus ligt op de flight search, de data is gemockt (JSON). De bedragen die bij de vluchtenb te zien zijn, zijn niet echt en er zijn maar een beperkt aantal bestemmingen.
 
-De opdracht dient in een van de gangbare front-end frameworks gemaakt te worden: React, Angular of Vue.
+De opdracht is in het front-end framework React gemaakt.
 
-```Noot van Jiro: ik heb React gebruikt```
-
-Er zijn geen eisen wat betreft de look & feel.
+De look & feel is eenvoudig gehouden, maar wel met 1 styled-component.
 
 De opdracht is in te zien op 3 manieren:
 
