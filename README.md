@@ -10,7 +10,7 @@ De look & feel is eenvoudig gehouden, maar wel met 1 styled-component.
 
 De opdracht is in te zien op 3 manieren:
 
-1. Link naar de demo: https://creative-paprenjak-7d6fb6.netlify.app/ (via Netlify.)
+1. Link naar de demo: https://sharevalue-airlines-jiro.netlify.app/ (via Netlify.)
 2. Link naar de repo: https://github.com/JirosWorld/sharevalue-airlines (zodat we je code kunnen beoordelen, en zelf de applicatie kunnen draaien om te kijken hoe het werkt).
 3. Maak gebruik van minimaal één zoekvoorbeeld waarmee gezocht kan worden in de applicatie: ```Zoek bijvoorbeeld op 'Amsterdam' en 'New York'```
 
