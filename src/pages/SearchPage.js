@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './SearchPage.css';
-import Data from '../data/mock-data.json';
+import Data from '../data/mock-flights.json';
 
 
 export default function SearchPage() {
@@ -12,7 +12,7 @@ export default function SearchPage() {
 
     return (
 
-        <div className="inner">
+        <section className="inner">
 
             <div className="column">
                 <label htmlFor="departure">Van:</label>
@@ -57,7 +57,7 @@ export default function SearchPage() {
             </div>
 
 
-        </div>
+        </section>
     )
 
 };
