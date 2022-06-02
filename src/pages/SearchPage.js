@@ -23,13 +23,14 @@ export default function SearchPage() {
                     Data.filter(post => {
                         if (queryDeparture === '') {
                             return post;
-                        } else if (post.city.toLowerCase().includes(queryDeparture.toLowerCase())) {
+                        } else if (post.address.cityName.toLowerCase().includes(queryDeparture.toLowerCase())) {
                             return post;
                         }
                     }).map((post, index) => (
                         <div className="box" key={index}>
-                            <p>{post.city}</p>
-                            <p>{post.country}</p>
+                            <p>Name of airport: {post.name}</p>
+                            <p>City: {post.address.cityName}</p>
+                            <p>Airport code: {post.address.cityCode}</p>
                         </div>
                     ))
                 }
@@ -44,13 +45,14 @@ export default function SearchPage() {
                     Data.filter(post => {
                         if (queryArrival === '') {
                             return post;
-                        } else if (post.city.toLowerCase().includes(queryArrival.toLowerCase())) {
+                        } else if (post.address.cityName.toLowerCase().includes(queryArrival.toLowerCase())) {
                             return post;
                         }
                     }).map((post, index) => (
                         <div className="box" key={index}>
-                            <p>{post.city}</p>
-                            <p>{post.country}</p>
+                            <p>Name of airport: {post.name}</p>
+                            <p>City: {post.address.cityName}</p>
+                            <p>Airport code: {post.address.cityCode}</p>
                         </div>
                     ))
                 }
