@@ -1,5 +1,5 @@
 import React from "react";
-import mockdata from '../data/mock-flights.json';
+import mockdata from '../data/mock-airports.json';
 
 const TextInput = props => (
   <form onSubmit={props.onSubmit}>

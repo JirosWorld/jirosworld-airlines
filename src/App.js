@@ -1,12 +1,11 @@
 import logo from './assets/logo.jpeg';
 import './App.css';
 import React, {useEffect, useState} from 'react';
-import AllFlights from "./pages/AllFlights";
 import Locate from './components/Locate';
 import Flight from './components/Flight';
 import Confirm from './components/Confirm';
 import Order from './components/Order';
-import mockdata from './data/mock-flights.json';
+import SearchPage from "./pages/SearchPage";
 
 function App() {
     const [origin, setOrigin] = useState();
@@ -40,9 +39,9 @@ function App() {
               { confirmation &&
               <Order confirmation={confirmation} order={order} setOrder={setOrder} />
               }
-              <div>
-                  <AllFlights/>
-              </div>
+
+              <SearchPage />
+
       </main>
   );
 }

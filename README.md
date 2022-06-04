@@ -17,12 +17,23 @@ De opdracht is in te zien op 3 manieren:
 Handleiding van de interface:
 
 
-Techniek:
+### Techniek:
 
+- denkstappen in [pseudocode hier](PSEUDOCODE.md).
+- React versie 18
 - React hooks
 - useState
 - useEffect
 
-Experimentele branches:
+## Geïnstalleerd maar niet gebruikt
+
+- React Hook-Form extension
+- Axios extension voor Fetch
+
+### Experimentele branches:
 
 -https://feature-filtersearch--sharevalue-airlines-jiro.netlify.app/
+
+### UI schets:
+
+![schets](./src/assets/airline-UI-schets.png)
