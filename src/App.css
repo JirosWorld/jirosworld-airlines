@@ -5,7 +5,7 @@ img {
 .page-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .inner {
@@ -19,20 +19,29 @@ img {
   width: 95%;
 }
 
+.small {
+  font-size: 9px;
+}
+
 button {
   background-color: #ec5990;
   border: none;
   color: white;
   cursor: pointer;
-  letter-spacing: .5rem;
+  letter-spacing: .3rem;
+  font-weight: bold;
   text-transform: uppercase;
   margin: 20px 0;
   padding: 16px 10px;
   border-radius: 4px;
 }
 
+button:hover {
+  background-color: deeppink;
+}
+
 hr {
   margin: 3em 0;
-  border: 1px solid #ec5990;
+  border: 1px solid #44081e;
   width: 100%;
 }

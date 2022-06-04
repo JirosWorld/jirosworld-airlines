@@ -2,6 +2,28 @@
   {
     "type": "location",
     "subType": "AIRPORT",
+    "name": "SCHIPHOL",
+    "detailedName": "Schiphol INTL airport",
+    "timeZoneOffset": "+01:00",
+    "iataCode": "BER",
+    "geoCode": {
+      "latitude": 52.3105,
+      "longitude": 4.7683
+    },
+    "address": {
+      "cityName": "AMSTERDAM",
+      "cityCode": "AMS",
+      "countryName": "NETHERLANDS",
+      "countryCode": "NL",
+      "regionCode": "EUROP"
+    },
+    "cost": {
+        "score": 20
+    }
+  },
+  {
+    "type": "location",
+    "subType": "AIRPORT",
     "name": "BRANDENBURG",
     "detailedName": "BERLIN/DE:BRANDENBURG",
     "timeZoneOffset": "+02:00",
@@ -17,10 +39,8 @@
       "countryCode": "DE",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 20.0
-      }
+    "cost": {
+      "score": 109
     }
   },
   {
@@ -41,10 +61,8 @@
       "countryCode": "DE",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 13.0
-      }
+    "cost": {
+      "score": 130
     }
   },
   {
@@ -65,10 +83,8 @@
       "countryCode": "ES",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 2.0
-      }
+    "cost": {
+      "score": 230
     }
   },
   {
@@ -89,10 +105,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 33.0
-      }
+    "cost": {
+      "score": 398
     }
   },
   {
@@ -113,10 +127,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 12.0
-      }
+    "cost": {
+      "score": 412
     }
   },
   {
@@ -137,10 +149,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 7.0
-      }
+    "cost": {
+      "score": 715
     }
   },
   {
@@ -161,10 +171,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 53.0
-      }
+    "cost": {
+      "score": 523
     }
   },
   {
@@ -185,10 +193,8 @@
       "countryCode": "DE",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 38.0
-      }
+    "cost": {
+      "score": 198
     }
   },
   {
@@ -209,10 +215,8 @@
       "countryCode": "DE",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 2.0
-      }
+    "cost": {
+      "score": 199
     }
   },
   {
@@ -233,10 +237,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 3.0
-      }
+    "cost": {
+      "score": 676
     }
   },
   {
@@ -256,31 +258,32 @@
       "countryName": "UNITED STATES OF AMERICA",
       "countryCode": "US",
       "regionCode": "NAMER"
+    },
+    "cost": {
+      "score": 99
     }
   },
   {
-  "type": "location",
-  "subType": "AIRPORT",
-  "name": "JOHN F KENNEDY INTL",
-  "detailedName": "NEW YORK/NY/US:JOHN F KENNEDY",
-  "timeZoneOffset": "-04:00",
-  "iataCode": "JFK",
-  "geoCode": {
-  "latitude": 40.63983,
-  "longitude": -73.77874
-},
-  "address": {
-  "cityName": "NEW YORK",
-  "cityCode": "NYC",
-  "countryName": "UNITED STATES OF AMERICA",
-  "countryCode": "US",
-  "regionCode": "NAMER"
-},
-  "analytics": {
-  "travelers": {
-    "score": 35.0
-  }
-}
+    "type": "location",
+    "subType": "AIRPORT",
+    "name": "JOHN F KENNEDY INTL",
+    "detailedName": "NEW YORK/NY/US:JOHN F KENNEDY",
+    "timeZoneOffset": "-04:00",
+    "iataCode": "JFK",
+    "geoCode": {
+      "latitude": 40.63983,
+      "longitude": -73.77874
+    },
+    "address": {
+      "cityName": "NEW YORK",
+      "cityCode": "NYC",
+      "countryName": "UNITED STATES OF AMERICA",
+      "countryCode": "US",
+      "regionCode": "NAMER"
+    },
+    "cost": {
+      "score": 135
+    }
   },
   {
     "type": "location",
@@ -300,10 +303,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 24.0
-      }
+    "cost": {
+      "score": 340
     }
   },
   {
@@ -324,10 +325,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 17.0
-      }
+    "cost": {
+      "score": 179
     }
   },
   {
@@ -348,10 +347,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 7.0
-      }
+    "cost": {
+      "score": 557
     }
   },
   {
@@ -372,10 +369,8 @@
       "countryCode": "GB",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 3.0
-      }
+    "cost": {
+      "score": 93
     }
   },
   {
@@ -396,10 +391,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 2.0
-      }
+    "cost": {
+      "score": 632
     }
   },
   {
@@ -420,10 +413,8 @@
       "countryCode": "GB",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 1.0
-      }
+    "cost": {
+      "score": 111
     }
   },
   {
@@ -444,10 +435,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 1.0
-      }
+    "cost": {
+      "score": 881
     }
   },
   {
@@ -468,9 +457,9 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
+    "cost": {
       "travelers": {
-        "score": 1.0
+        "score": 661
       }
     }
   },
@@ -492,10 +481,8 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 0.0
-      }
+    "cost": {
+      "score": 169
     }
   },
   {
@@ -516,10 +503,8 @@
       "countryCode": "ES",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 30.0
-      }
+    "cost": {
+      "score": 93
     }
   },
   {
@@ -540,10 +525,8 @@
       "countryCode": "ES",
       "regionCode": "EUROP"
     },
-    "analytics": {
-      "travelers": {
-        "score": 25.0
-      }
+    "cost": {
+      "score": 75
     }
   },
   {
@@ -564,9 +547,9 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
+    "cost": {
       "travelers": {
-        "score": 3.0
+        "score": 633
       }
     }
   },
@@ -588,9 +571,9 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
+    "cost": {
       "travelers": {
-        "score": 1.0
+        "score": 541
       }
     }
   },
@@ -612,9 +595,9 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
+    "cost": {
       "travelers": {
-        "score": 1.0
+        "score": 981
       }
     }
   },
@@ -636,9 +619,9 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
+    "cost": {
       "travelers": {
-        "score": 1.0
+        "score": 911
       }
     }
   },
@@ -660,9 +643,9 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
+    "cost": {
       "travelers": {
-        "score": 0.0
+        "score": 856
       }
     }
   },
@@ -684,9 +667,9 @@
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
+    "cost": {
       "travelers": {
-        "score": 0.0
+        "score": 726
       }
     }
   },
@@ -702,16 +685,14 @@
       "longitude": -68.36139
     },
     "address": {
-      "cityName": "BAR HARBOR",
+      "cityName": "BARQ HARBOR",
       "cityCode": "BHB",
       "countryName": "UNITED STATES OF AMERICA",
       "countryCode": "US",
       "regionCode": "NAMER"
     },
-    "analytics": {
-      "travelers": {
-        "score": 0.0
-      }
+    "cost": {
+      "score": 616
     }
   },
   {
@@ -726,16 +707,14 @@
       "longitude": 91.9787
     },
     "address": {
-      "cityName": "SHILLONG",
+      "cityName": "SHILLONGX",
       "cityCode": "SHL",
       "countryName": "INDIA",
       "countryCode": "IN",
       "regionCode": "ASIA"
     },
-    "analytics": {
-      "travelers": {
-        "score": 0.0
-      }
+    "cost": {
+      "score": 916
     }
   }
 ]

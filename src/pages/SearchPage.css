@@ -25,3 +25,7 @@ input {
     width: 20rem;
     padding-left: 10px;
 }
+
+#passengers, #departure, #return {
+    max-width: 80px;
+}
