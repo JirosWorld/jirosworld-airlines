@@ -8,7 +8,7 @@ De opdracht is in het front-end framework React gemaakt.
 
 De opdracht is in te zien op 3 manieren:
 
-1. Link naar de demo: https://main--sharevalue-airlines-jiro.netlify.app/ (via Netlify.) of via https://sharevalue-airlines-jiro.netlify.app/
+1. Link naar de demo: https://sharevalue-airlines-jiro.netlify.app/ (via Netlify.)
 2. Link naar de repo: https://github.com/JirosWorld/sharevalue-airlines (zodat code kan worden beoordeeld, en jullie zelf de applicatie kunnen draaien om te kijken hoe het werkt).
 3. Gebruik van minimaal één zoekvoorbeeld waarmee gezocht kan worden in de applicatie: ```Zoek bijvoorbeeld op 'Ams' en 'Los'```
 
@@ -16,17 +16,17 @@ De opdracht is in te zien op 3 manieren:
 
 1. Zoek eerst, in linkerveld, een stad van vertrek; het woord ```amsterdam``` hoeft niet volledig getypt te worden.
 2. Zoek dan, in rechterveld, een plaats van aankomst; het woord ```los angeles``` hoeft niet volledig getypt te worden.
-3. Het zoeken naar alel andere steden in de mock data werkt ook, maar daar zit geen vluchtprijs calculatie bij.
-4. _afwijking_: beschikbare vluchten worden al meteen zichtbaar tijdens het typen - Dus: selecteer 1 aankomst- of vertrek-vlucht die tijdens het typen zichtbaar worden.
+3. Het zoeken naar alle andere steden in de mock data werkt ook, maar daar zit geen vluchtprijs calculatie bij.
+4. _afwijking_: beschikbare vluchten worden al meteen zichtbaar tijdens het typen. Dus: selecteer 1 aankomst- of vertrek-vlucht die tijdens het typen zichtbaar worden.
 5. Klik op het kalendertje van de data-pickers om vertrek/aankomst datum te selecteren (browserafhankelijk).
 6. Klik dan op het number veld om aantal personen te selecteren of typ zelf een getal; er is een maximum van 7 personen.
 7. Klik op de ZOEKEN knop.
-8. Vul verder alle daaropvolgende velden in (kies de klasse in de dropdown) en klik op 'vlucht selecteren'.
-9. Als laatste verschijnt er een scherm met de boekgegevens.
+8. Vul verder alle daaropvolgende velden in (kies de luxe/klasse in de dropdown) en klik op 'vlucht selecteren'.
+9. Als laatste verschijnt er een scherm met de boekingsgegevens.
 
 NB: er kan alleen op stad worden gezocht, niet op andere eigenschappen (dus niet op datum).
 
-PS: de zoekresultaten kunnen niet doorgegeven worden als variabele, dus hebben geen gecalculeerde prijs. De totaalprijs na bestellen is een mock: het betreft de statische Key naar de JSON objecten van Amsterdam en Los Angeles, dus dat is steeds een veste prijs, die je alleen kunt veranderen door een andere luxe-klasse te selecteren met de dropdown.
+PS: de zoekresultaten kunnen niet doorgegeven worden als variabele, dus hebben geen gecalculeerde prijs. De totaalprijs na bestellen is een mock: het betreft de statische Key naar de JSON objecten van Amsterdam en Los Angeles, dus dat is steeds een vaste prijs, die je alleen kunt veranderen door een andere luxe-klasse te selecteren met de dropdown.
 
 ### Techniek:
 
@@ -36,7 +36,7 @@ PS: de zoekresultaten kunnen niet doorgegeven worden als variabele, dus hebben g
 - useState
 - useEffect
 - ternary operators
-- useRef
+- createRef
 - CSS (niet responsive, alleen voor desktop)
 - alle interfaces in 1 lang form, met maar 1 submit
 - console.log (staan nog in comments)

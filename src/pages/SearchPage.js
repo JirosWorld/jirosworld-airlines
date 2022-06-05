@@ -312,7 +312,7 @@ export default function SearchPage() {
 
 
             {formSubmitState ?
-                <div className="box">
+                <div className="box booking">
                     <h2>Bestelling/Boeking</h2>
                     <p><strong>Dit heb je besteld/geboekt:</strong></p>
                     <p>Geboekte vlucht van: <span className="capitalize">{pickedFlight

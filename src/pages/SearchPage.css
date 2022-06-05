@@ -37,10 +37,16 @@ input {
     margin: 3px;
     width: 20rem;
     padding: 0;
+    cursor: pointer;
+}
+
+.box.booking, .box.booking p, .box.booking h2 {
+    cursor: default;
 }
 
 .box p, .box h2 {
     padding: 0 0 0 10px;
+    cursor: pointer;
 }
 
 #passengers, #departure, #return {
