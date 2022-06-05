@@ -217,7 +217,9 @@ export default function SearchPage() {
                                     selectie met klassefactor {luxury && luxury}:
                                     <br/>
                                     <strong>&#128176; &nbsp;
-                                        &euro; {calculateCost(SearchData[0].cost.score, SearchData[7].cost.score) * luxury},-
+                                        <span className="bigtext">&euro;
+                                            {calculateCost(SearchData[0].cost.score,
+                                                SearchData[7].cost.score) * luxury},-</span>
                                     </strong>
                                     <br/>= van Amsterdam naar Los Angeles</p>
 
@@ -231,9 +233,12 @@ export default function SearchPage() {
                                         name="fullname"
                                         placeholder="voornaam achternaam"
                                         id="fullname"
+                                        className={formName.length < 4 ? 'input-error' : 'input-normal'}
                                         value={formName}
                                         onChange={(e) => setFormName(e.target.value)}
                                     />
+                                    {formName.length < 4
+                                    && <p className="error-message">Deze naam is te kort! Typ volledige naam in</p>}
                                 </label>
                                 <br/>
                                 <label htmlFor="address">
@@ -301,7 +306,8 @@ export default function SearchPage() {
                         vertrekDatum: {departDate},<br/>
                         aankomstDatum: {returnDate},
                         <br/><br/>Totaalprijs: &euro;
-                        {calculateCost(SearchData[0].cost.score, SearchData[10].cost.score) * luxury}
+                        <strong>{calculateCost(SearchData[0].cost.score,
+                            SearchData[7].cost.score) * luxury}</strong>
                         ,-<br/><br/>
                         Naam: {formName},<br/>
                         Adres: {formAddress},<br/>

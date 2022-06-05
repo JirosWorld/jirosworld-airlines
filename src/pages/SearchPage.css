@@ -2,9 +2,13 @@
     border: 1px solid red;
 }
 
+.input-error {
+    color: darkred;
+}
 .error-message {
-    color: red;
-    font-size: 14px;
+    margin: 0;
+    color: #ec5990;
+    font-size: 0.9em;
 }
 
 .show {
@@ -44,8 +48,16 @@ input {
     background-color: #44081e;
     padding: 1em;
 }
+
 .biglabel select {
     font-size: 1.1em;
+}
+
+.bigtext {
+    font-size: 1.4em;
+    padding: 0.3em;
+    margin: 0.3em;
+    line-height: 1.5em;
 }
 
 .capitalize {
