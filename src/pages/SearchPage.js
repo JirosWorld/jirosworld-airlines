@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, createRef} from 'react';
 import './SearchPage.css';
 import SearchData from '../data/mock-airports.json';
 import options from '../data/mock-flights.json';
@@ -6,12 +6,10 @@ import calculateCost from '../helpers/calculateCost';
 
 
 export default function SearchPage() {
-    const radioButtonDepartRef = useRef();
-    const radioButtonArrivRef = useRef();
     const [queryDeparture, setQueryDeparture] = useState('');
     const [queryArrival, setQueryArrival] = useState('');
-    const [airportNameDeparture, setAirportNameDeparture] = useState('');
-    const [airportNameArrival, setAirportNameArrival] = useState('');
+    const [pickedFlight, setPickedFlight] = useState("amsterdam");
+    const [airportNameArrival, setAirportNameArrival] = useState('los angeles');
     const [departDate, setDepartDate] = useState('');
     const [returnDate, setReturnDate] = useState('');
     const [visibility, setVisibility] = useState(true);
@@ -22,19 +20,22 @@ export default function SearchPage() {
     const [formAddress, setFormAddress] = useState('');
     const [formPhonenr, setFormPhonenr] = useState('');
     const [formIdentification, setFormIdentification] = useState('');
+    const [grandTotal, setGrandTotal] = useState(0);
     const [formOrderState, setFormOrderState] = useState(false);
     const [formSubmitState, setFormSubmitState] = useState(false);
 
-    console.log("mock zoek data:", SearchData);
-    console.log("zoekopdracht vertrek: ", queryDeparture);
-    console.log("zoekopdracht aankomst: ", queryArrival);
+    let pickedFlightCityRef = createRef();
+    let airportNameArrivalRef = createRef();
+    let grandTotalRef = createRef();
+
+    // console.log("mock zoek data:", SearchData);
+    // console.log("zoekopdracht vertrek: ", queryDeparture);
+    // console.log("zoekopdracht aankomst: ", queryArrival);
 
     //functies voor radiobuttons
     function handleAirportDepartureSelect(event) {
-        // const departureName = radioButtonDepartRef.current.value;
-        setAirportNameDeparture(event.target.value);
-        // setAirportNameDeparture(departureName);
-        console.log("vertrekstad:", airportNameDeparture);
+        setPickedFlight(event.target.value);
+        console.log("vertrekstad:", pickedFlight);
         // radioButtonDepartRef.current.value = null;
     }
 
@@ -66,7 +67,7 @@ export default function SearchPage() {
             window.scrollTo({top: 0, behavior: 'smooth'})
         }, 0);
         e.preventDefault();
-        console.log("vertrekplaats", airportNameDeparture, "aankomstplaats", airportNameArrival, "personenCounter", formPassengers, "vertrekDatum", departDate, "aankomstDatum:", returnDate);
+        console.log("vertrekplaats", pickedFlight, "aankomstplaats", airportNameArrival, "personen", formPassengers, "vertrekDatum", departDate, "aankomstDatum:", returnDate, "bedrag: ", grandTotal);
     }
 
     return (
@@ -91,7 +92,9 @@ export default function SearchPage() {
                                         if (queryDeparture === '') {
                                             //alleen iets tonen waneer er iets getypt wordt
                                             return null;
-                                        } else if (postDeparture.address.cityName.toLowerCase().includes(queryDeparture.toLowerCase())) {
+                                        } else if
+                                        (postDeparture.address.cityName.toLowerCase().includes(queryDeparture.toLowerCase())) {
+                                            // console.log(postDeparture.address.cityName);
                                             return postDeparture;
                                         }
                                     }).map((postDeparture, index) => (
@@ -99,16 +102,18 @@ export default function SearchPage() {
                                         <div className="box" key={index}>
                                             <label htmlFor={postDeparture.iataCode}>
                                                 <input type="radio"
-                                                       ref={radioButtonDepartRef}
+                                                       ref={pickedFlightCityRef}
                                                        id={postDeparture.iataCode}
                                                        name="airport_departure"
-                                                       value={airportNameDeparture}
+                                                       value={postDeparture.address.cityName}
+                                                       checked={pickedFlight === postDeparture.address.cityName}
                                                        onChange={handleAirportDepartureSelect}
                                                 />
-                                                <p>{postDeparture.name}</p>
-                                                <p>{postDeparture.address.cityName}</p>
-                                                <p>{postDeparture.iataCode}</p>
-                                                <p>{postDeparture.cost.score && postDeparture.cost.score}</p>
+                                                <p>{postDeparture.name}<br/>
+                                                    {postDeparture.address.cityName}<br/>
+                                                    {postDeparture.iataCode}<br/>
+                                                    {postDeparture.cost.score && postDeparture.cost.score}
+                                                </p>
                                             </label>
                                         </div>
 
@@ -127,6 +132,7 @@ export default function SearchPage() {
                                             //niets tonen waneer er niets getypt wordt
                                             return null;
                                         } else if (postArrival.address.cityName.toLowerCase().includes(queryArrival.toLowerCase())) {
+                                            console.log(postArrival.address.cityName);
                                             return postArrival;
                                         }
                                     }).map((postArrival, index) => (
@@ -134,16 +140,17 @@ export default function SearchPage() {
                                         <div className="box" key={index}>
                                             <label htmlFor={postArrival.iataCode}>
                                                 <input type="radio"
-                                                       ref={radioButtonArrivRef}
+                                                       ref={airportNameArrivalRef}
                                                        id={postArrival.iataCode}
                                                        name="airport_arrival"
-                                                       value={airportNameArrival}
+                                                       value={postArrival.address.cityName}
+                                                       checked={airportNameArrival === postArrival.address.cityName}
                                                        onChange={handleAirportArrivalSelect}
                                                 />
-                                                <p>{postArrival.name}</p>
-                                                <p>{postArrival.address.cityName}</p>
-                                                <p>{postArrival.iataCode}</p>
-                                                <p>{postArrival.cost.score && postArrival.cost.score}</p>
+                                                <p>{postArrival.name}<br/>
+                                                 {postArrival.address.cityName}<br/>
+                                                 {postArrival.iataCode}<br/>
+                                                 {postArrival.cost.score && postArrival.cost.score}</p>
                                             </label>
                                         </div>
 
@@ -156,7 +163,7 @@ export default function SearchPage() {
 
 
                     <section className="flight-date-persons">
-                        <p>↓</p>
+                        <p>↑ selecteer hier 1 vertrek en 1 aankomst plaats.</p>
                         <label htmlFor="departure">Kies vertrekdatum: </label>
                         <input type="date"
                                onChange={(e) => setDepartDate(e.target.value)}
@@ -198,8 +205,8 @@ export default function SearchPage() {
                                 <p>Vluchtlocaties
                                     <br/>van: <span className="capitalize">{queryDeparture
                                     && queryDeparture}</span> naar: <span
-                                        className="capitalize">{queryArrival
-                                    && queryArrival}</span></p>
+                                        className="capitalize">{airportNameArrival
+                                    && airportNameArrival}</span></p>
                                 <br/>
                                 <p><label htmlFor="luxury" className="biglabel">Kies vluchtoptie:
                                     <select value={luxury} onChange={handleluxuryChange}>
@@ -218,10 +225,18 @@ export default function SearchPage() {
                                     <br/>
                                     <strong>&#128176; &nbsp;
                                         <span className="bigtext">&euro;
-                                            {calculateCost(SearchData[0].cost.score,
-                                                SearchData[7].cost.score) * luxury},-</span>
+                                            <span
+                                                ref={grandTotalRef}
+                                                onChange={(e) => setGrandTotal(e.target.value)}
+                                            >{calculateCost(SearchData[0].cost.score,
+                                                SearchData[7].cost.score) * luxury}</span>
+                                            ,-</span>
                                     </strong>
-                                    <br/>= van Amsterdam naar Los Angeles</p>
+                                    <br/>= van {pickedFlight && pickedFlight} naar {airportNameArrival
+                                    && airportNameArrival}</p>
+                                <p><br/>VertrekDatum: {departDate}<br/>
+                                    AankomstDatum: {returnDate}<br/>
+                                    Aantal personen: {formPassengers}</p>
 
                             </section>
                             <section>
@@ -238,7 +253,9 @@ export default function SearchPage() {
                                         onChange={(e) => setFormName(e.target.value)}
                                     />
                                     {formName.length < 4
-                                    && <p className="error-message">Deze naam is te kort! Typ volledige naam in</p>}
+                                    &&
+                                    <p className="error-message">Deze naam is te kort! Typ volledige
+                                        naam in</p>}
                                 </label>
                                 <br/>
                                 <label htmlFor="address">
@@ -298,10 +315,10 @@ export default function SearchPage() {
                 <div className="box">
                     <h2>Bestelling/Boeking</h2>
                     <p><strong>Dit heb je besteld/geboekt:</strong></p>
-                    <p>Geboekte vlucht van: <span className="capitalize">{queryDeparture
-                    && queryDeparture}</span>,<br/>
-                        naar: <span className="capitalize">{queryArrival
-                        && queryArrival}</span>,<br/>
+                    <p>Geboekte vlucht van: <span className="capitalize">{pickedFlight
+                    && pickedFlight}</span>,<br/>
+                        naar: <span className="capitalize">{airportNameArrival
+                        && airportNameArrival}</span>,<br/>
                         aantal personen: {formPassengers},<br/>
                         vertrekDatum: {departDate},<br/>
                         aankomstDatum: {returnDate},

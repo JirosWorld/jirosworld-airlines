@@ -45,3 +45,16 @@ hr {
   border: 1px solid #44081e;
   width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+  .page-container {
+    display: block;
+  }
+  .inner {
+    display: block;
+    width: 95%;
+  }
+  .biglabel {
+    display: block;
+  }
+}
