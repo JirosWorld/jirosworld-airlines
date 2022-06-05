@@ -18,7 +18,8 @@
 - telefoon
 - ID nummer (paspoort)
 - mock/gesimuleerde vluchtprijs door vaste getallen bij elkaar op te tellen met een Helper functie
+- eventueel meerdere vluchten mocken door verschil in first class/economy
 - Submit button om alles te kunnen Posten
 5. Toon alle ingevoerde data uit het formulier in een Div/Section
-6. Als laatste stap met een && operator de Sections zichtbaar of onzichtbaar maken op basis van wel/niet ingevulde data ( is > groter dan Nul of .length langer dan Nul) = met de "ternary operator".
-7. Uiteindelijk kan code netter worden ingedeeld door van ale onderdelen losse componenten/sections te maken.
+6. Als laatste stap met een && operator de Sections zichtbaar of onzichtbaar maken op basis van wel/niet ingevulde data ( is > groter dan Nul of .length langer dan Nul, zijn A && B beide TRUE) = met de "ternary operator" en CSS/visibility:hidden.
+7. Uiteindelijk kan code netter worden ingedeeld door van alle onderdelen losse componenten/sections te maken, als ik tijd over heb.

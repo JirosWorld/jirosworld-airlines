@@ -6,8 +6,6 @@ De focus ligt op de flight search, de data is gemockt (JSON). De bedragen/datums
 
 De opdracht is in het front-end framework React gemaakt.
 
-De look & feel is eenvoudig gehouden, maar wel met 1 styled-component.
-
 De opdracht is in te zien op 3 manieren:
 
 1. Link naar de demo: https://main--sharevalue-airlines-jiro.netlify.app/ (via Netlify.) of via https://sharevalue-airlines-jiro.netlify.app/
@@ -24,8 +22,10 @@ Handleiding van de interface:
 - React hooks
 - useState
 - useEffect
+- ternary operators
 - useRef
 - CSS (niet responsive, alleen voor desktop)
+- alle interfaces in 1 lang form, met maar 1 submit
 
 ## Geïnstalleerd maar niet gebruikt
 
