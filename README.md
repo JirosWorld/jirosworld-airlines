@@ -35,7 +35,7 @@ Handleiding van de interface:
 ### Experimentele branches:
 
 - https://feature-filtersearch--sharevalue-airlines-jiro.netlify.app/
-- https://open-flight-api--sharevalue-airlines-jiro.netlify.app/
+- https://ternary-operator-version'--sharevalue-airlines-jiro.netlify.app/
 
 ### UI schets:
 
