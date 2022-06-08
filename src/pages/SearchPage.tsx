@@ -25,9 +25,9 @@ export default function SearchPage() {
     const [formOrderState, setFormOrderState] = useState(false);
     const [formSubmitState, setFormSubmitState] = useState(false);
 
-    let airportNameDepartureRef = createRef();
-    let airportNameArrivalRef = createRef();
-    let grandTotalRef = createRef();
+    let airportNameDepartureRef = createRef<HTMLInputElement>;
+    let airportNameArrivalRef = createRef<HTMLInputElement>;
+    let grandTotalRef = createRef<HTMLSpanElement>;
 
     // console.log("mock zoek data:", SearchData);
     // console.log("zoekopdracht vertrek: ", queryDeparture);
