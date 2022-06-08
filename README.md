@@ -1,4 +1,4 @@
-# Sharevalue airlines
+# JirosWorld airlines
 
 Gebouwd: een applicatie om een vlucht te boeken: een gebruiker kan een vertrek en een aankomstlocatie invoeren, de gewenste vertrekdatum en het aantal personen. Na het klikken op de zoekknop krijg je een overzicht met gevonden vluchten. Als de gebruiker een vlucht selecteert kan de gebruiker zijn gegevens invoeren en krijgt de gebruiker een overzicht van de gegevens.
 
@@ -8,8 +8,8 @@ De opdracht is in het front-end framework React gemaakt.
 
 De opdracht is in te zien op 3 manieren:
 
-1. Link naar de demo: https://sharevalue-airlines-jiro.netlify.app/ (via Netlify.)
-2. Link naar de repo: https://github.com/JirosWorld/sharevalue-airlines (zodat code kan worden beoordeeld, en jullie zelf de applicatie kunnen draaien om te kijken hoe het werkt).
+1. Link naar de demo: https://JirosWorld-airlines-jiro.netlify.app/ (via Netlify.)
+2. Link naar de repo: https://github.com/JirosWorld/jirosworld-airlines (zodat code kan worden beoordeeld, en jullie zelf de applicatie kunnen draaien om te kijken hoe het werkt).
 3. Gebruik van minimaal één zoekvoorbeeld waarmee gezocht kan worden in de applicatie: ```Zoek bijvoorbeeld op 'Ams' en 'Los'```
 
 ## Handleiding van de interface:
@@ -48,8 +48,8 @@ PS: de zoekresultaten kon ik niet doorgeven als variabele, dus hebben geen gecal
 
 ### Experimentele branches:
 
-- https://feature-filtersearch--sharevalue-airlines-jiro.netlify.app/
-- https://ternary-operator-version--sharevalue-airlines-jiro.netlify.app/
+- https://feature-filtersearch--jirosworld-airlines-jiro.netlify.app/
+- https://ternary-operator-version--jirosworld-airlines-jiro.netlify.app/
 
 ### UI schets:
 
